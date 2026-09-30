@@ -27,7 +27,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env
 
 # vercel
 .vercel
@@ -41,3 +40,11 @@ issues*.md
 push_issues.sh
 playwright-report/
 test-results/
+
+issue.md
+.agents/
+skills-lock.json
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat

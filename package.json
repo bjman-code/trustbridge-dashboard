@@ -4,14 +4,15 @@
   "private": true,
   "engines": {
     "node": ">=18.17.0"
+  },
   "bin": {
     "trustbridge-dash": "./scripts/cli/index.mjs"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run prisma:generate && node scripts/next-build.mjs",
+    "dev": "node init && next dev",
+    "build": "node init && npm run prisma:generate && node scripts/next-build.mjs",
     "vercel-build": "npm run db:deploy && npm run build",
-    "start": "next start",
+    "start": "node init && next start",
     "worker": "node scripts/worker.mjs",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
